@@ -1,6 +1,7 @@
 package ouiparser
 
 import (
+	"fmt"
 	"net"
 	"testing"
 )
@@ -21,6 +22,8 @@ func TestSearchOUI(t *testing.T) {
 		t.FailNow()
 	}
 	mac, err := net.ParseMAC("d4:38:9c:00:00:00")
+	targetOUI := fmt.Sprintf("%02X%02X%02X", mac[0], mac[1], mac[2])
+	t.Log(targetOUI)
 	if err != nil {
 		t.FailNow()
 	}
