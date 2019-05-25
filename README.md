@@ -2,7 +2,7 @@
 
 IEEE OUI data parser
 
-You can download `oui.txt` here: standards.ieee.org/develop/regauth/oui/oui.txt
+You can download `oui.txt` here: <http://standards-oui.ieee.org/oui/oui.txt>
 
 ## Install
 
